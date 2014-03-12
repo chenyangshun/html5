@@ -1,1 +1,65 @@
-<>
+
+<!DOCTYPE html>
+<html manifest="../app.manifest">
+<head>
+<meta charset="UTF-8">
+<title>文件夹列表</title>
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../../resources/css/jquery.mobile-1.4.0-beta.1.min.css">
+<script type="text/javascript" src="../../resources/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/jquery.mobile-1.4.0-beta.1.min.js"></script> 
+<script type="text/javascript" src="../../resources/js/jquery.swipetab.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#swipeTab").swipeTab({});
+});
+</script>
+<style type="text/css">
+.ui-content{
+	padding: 8px;
+}
+#swipeTab .tab-panel{
+	position: relative;
+	display: inline-block;
+}
+#swipeTab .tab-panel .sub-tab{
+	margin-right: 20px;
+}
+</style>
+</head>
+<body>
+	<div data-role="page" id="swipeTabPage">		
+		<div data-role="content">
+				<div id="swipeTab">
+					<div class="tab-nav" data-role="navbar">
+						<ul>
+							<li><a href="#one" data-ajax="false" id="nav-one">one</a></li>
+							<li><a href="#two" data-ajax="false" id="nav-two">two</a></li>
+						</ul>
+					</div>
+					<div class="tab-panel">
+						<div id="one" class="sub-tab">
+							 <ul data-role="listview" data-inset="true">
+					            <li><a href="#">aaaa</a></li>
+					            <li><a href="#">bbbb</a></li>
+					            <li><a href="#">cccc</a></li>
+					            <li><a href="#">dddd</a></li>
+					            <li><a href="#">eeeee</a></li>
+					        </ul>  
+						</div>
+						<div id="two" class="sub-tab">
+							 <ul data-role="listview" data-inset="true">
+					            <li><a href="#">111111</a></li>
+					            <li><a href="#">bb2222bb</a></li>
+					            <li><a href="#">cc335cc</a></li>
+					            <li><a href="#">eeeee3335</a></li>
+					            <li><a href="#">eeeedfsdfee</a></li>
+					        </ul>  
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
